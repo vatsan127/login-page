@@ -31,22 +31,26 @@ function Form() {
   }
 
   return (
-    <div className="container mt-3">
+    <div className="d-flex flex-column align-items-center mt-3">
       <h1>{getWelcomeMessage()}</h1>
       <form>
-        <div className="mb-3">
+        <div className="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">
+            @
+          </span>
           <input
             type="text"
             className="form-control username"
-            placeholder="User Name"
+            placeholder="Username"
             onChange={handleChange}
             value={name}
+            required
           />
         </div>
 
         {inputFields.map(formInputFields)}
-        <button type="submit" className="btn btn-primary">
-          Login
+        <button className="btn btn-primary w-100 py-2" type="submit">
+          Sign in
         </button>
       </form>
     </div>
