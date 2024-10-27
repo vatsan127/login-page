@@ -12,12 +12,12 @@ function Navbar() {
   }
 
   return (
-    <nav className="navbar navbar-expand bg-body-tertiary">
+    <nav className="navbar navbar-expand bg-primary">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          React Login Page
-        </a>
-        <div className="d-flex">{time}</div>
+        <h1 className="navbar-brand text-white ">React Login Page</h1>
+        <div className="d-flex">
+          <h4 className="text-white">{time}</h4>
+        </div>
       </div>
     </nav>
   );

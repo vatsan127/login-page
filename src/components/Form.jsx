@@ -8,7 +8,7 @@ function Form() {
   }
 
   return (
-    <div className="container">
+    <div className="container mt-3">
       <h1>Welcome, {name}</h1>
       <form>
         <div className="mb-3">
@@ -28,7 +28,7 @@ function Form() {
           />
         </div>
         <button type="submit" className="btn btn-primary">
-          Submit
+          Login
         </button>
       </form>
     </div>
